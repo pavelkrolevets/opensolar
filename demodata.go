@@ -62,7 +62,7 @@ func demoData() error {
 			return err
 		}
 
-		recp, err := core.NewRecipient("fabideas"+run, password, seedpwd, "varunramganesh@gmail.com")
+		recp, err := core.NewRecipient("receiver"+run, password, seedpwd, "varunramganesh@gmail.com")
 		if err != nil {
 			log.Println(err)
 			return err
@@ -291,6 +291,7 @@ func createDemoProjects() []core.Project{
 	project1.TellerURL = ""
 	project1.BrokerURL = "https://mqtt.openx.solar"
 	project1.TellerPublishTopic = "opensolartest"
+	project1.DateLastPaid = 1623497987
 	project1.Content.Details = make(map[string]map[string]interface{})
 
 	demoProjects = append(demoProjects, project1)
@@ -314,6 +315,7 @@ func createDemoProjects() []core.Project{
 	project2.TellerURL = ""
 	project2.BrokerURL = "https://mqtt.openx.solar"
 	project2.TellerPublishTopic = "opensolartest"
+	project2.DateLastPaid = 1623497987
 	project2.Content.Details = make(map[string]map[string]interface{})
 
 	demoProjects = append(demoProjects, project2)
@@ -337,6 +339,7 @@ func createDemoProjects() []core.Project{
 	project3.TellerURL = ""
 	project3.BrokerURL = "https://mqtt.openx.solar"
 	project3.TellerPublishTopic = "opensolartest"
+	project3.DateLastPaid = 1623497987
 	project3.Content.Details = make(map[string]map[string]interface{})
 
 	demoProjects = append(demoProjects, project3)
@@ -360,6 +363,7 @@ func createDemoProjects() []core.Project{
 	project4.TellerURL = ""
 	project4.BrokerURL = "https://mqtt.openx.solar"
 	project4.TellerPublishTopic = "opensolartest"
+	project4.DateLastPaid = 1623497987
 	project4.Content.Details = make(map[string]map[string]interface{})
 
 	demoProjects = append(demoProjects, project4)
